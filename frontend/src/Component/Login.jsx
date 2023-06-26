@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import './Login.css'; // import CSS file for styling
-import logo from '../Icons/Logo.svg';
+import '../Styles/Login.css'; // import CSS file for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import { Box, Image, useToast } from '@chakra-ui/react';
 import axios from "axios"
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const toast = useToast()
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -31,14 +32,31 @@ const Login = () => {
         } else {
             setPasswordError(false);
             setdisable(true)
-            axios.post("https://light-bat-gown.cyclic.app/users/login", payload)
+            axios.post("http://localhost:8080/users/login", payload)
                 .then((res) => {
                     if (res.data === "sucess") {
-                        setInvalid(false)
-                        navigate("/dashboard")
-                        setdisable(false)
+                        toast({
+                            title: 'Login Successfully.',
+                            description: "You Can Explore Now",
+                            status: 'success',
+                            duration: 9000,
+                            isClosable: true,
+                        })
+                        setTimeout(() => {
+                            setInvalid(false)
+                            navigate("/home")
+                            setdisable(false)
+                        })
+
 
                     } else {
+                        toast({
+                            title: 'Invalid Credential',
+                            description: "Not allow to home page",
+                            status: 'error',
+                            duration: 9000,
+                            isClosable: true,
+                        })
                         setInvalid(true)
                         setdisable(false)
                         setTimeout(() => {
@@ -61,8 +79,7 @@ const Login = () => {
         <div className="login-container">
             <div className="container">
                 <div className="logo-container">
-                    <img src={logo} alt="Logo" />
-                    <h4>Online Project Management</h4>
+                    <h4>Best Content App</h4>
                 </div>
                 <div className="form-container">
                     <form onSubmit={onHendell}>

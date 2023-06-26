@@ -10,17 +10,16 @@
 .login-container h4 {
     color: white;
     white-space: nowrap;
+    font-size: 19px;
+    margin: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
 }
 
 .logo-container {
     text-align: center;
 }
 
-.logo-container img {
-    height: 100px;
-    width: 100px;
-    margin-bottom: -15px;
-}
 
 .form-container {
     width: 22rem;

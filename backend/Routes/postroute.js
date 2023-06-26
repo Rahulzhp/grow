@@ -18,7 +18,7 @@ projectRoute.post("/add", async (req, res) => {
     try {
         let project = new ProjectModel(data)
         await project.save()
-        res.send({ msg: "data added", project })
+        res.send("posted")
 
     } catch (er) {
         console.log("er", er)
@@ -30,7 +30,7 @@ projectRoute.patch('/:id', async (req, res) => {
     const payload = req.body;
     try {
         const data = await ProjectModel.findByIdAndUpdate({ _id: id }, payload);
-        res.send(data);
+        res.send("edited");
     } catch (err) {
         res.send(err);
     }
@@ -41,7 +41,7 @@ projectRoute.delete('/:id', async (req, res) => {
 
     try {
         const data = await ProjectModel.findByIdAndDelete({ _id: id });
-        res.send({ msg: "deleted" });
+        res.send("deleted");
     } catch (err) {
         res.send(err);
     }

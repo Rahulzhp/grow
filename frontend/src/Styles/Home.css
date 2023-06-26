@@ -1,0 +1,75 @@
+.login-container {
+    background-image: url(../Icons/login-bg-1.svg);
+    background-repeat: no-repeat;
+    margin-top: -70px;
+    background-size: cover;
+    background-position-y: -300px;
+    padding: 5rem;
+
+}
+
+.login-container>div {
+    text-align: center;
+
+}
+
+.btn {
+    display: flex;
+    margin: auto;
+    gap: 355px;
+    justify-content: end;
+}
+
+#utentbtn {
+    background-color: green;
+    padding: 5px;
+}
+
+#dtentbtn {
+    background-color: green;
+    padding: 5px;
+}
+
+
+
+.login-container>div>h1 {
+    margin-top: 90px;
+    color: white;
+    font-size: 29px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+
+}
+
+.logo {
+    width: 90%;
+    height: 200px;
+}
+
+.post-list-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.post-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.post-card h3 {
+    margin-top: 0;
+}
+
+.post-card p {
+    margin-bottom: 0;
+}

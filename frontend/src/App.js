@@ -1,11 +1,10 @@
 
 import './App.css';
-import CreatePost from './Component/CreatePost';
-
+import Allroutes from './AppRouter/Allroutes';
 function App() {
   return (
-    <div className="App">
-      <CreatePost />
+    <div>
+      <Allroutes />
     </div>
   );
 }
