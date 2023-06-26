@@ -1,11 +1,11 @@
 ### Content Blog App ####
 
 
-![Tech Prime Lab Project]()
+![Tech Prime Lab Project](https://github.com/Rahulzhp/photos/assets/107567053/2fe58aa5-5a52-4712-8dea-f90fcc31a3da)
 
 # Clone of Content Post App
 
-Deployed Link - https://649673e993a1cb2282b147f9--dreamy-cajeta-d38ca4.netlify.app/
+Deployed Link - https://649988525abd1411d694d952--magical-piroshki-62bdee.netlify.app/
 
 # Backend Deployed link 
  
@@ -35,7 +35,7 @@ To make this clone we have used HTMl, CSS and JavaScript, ReactJS for front-end 
 
 ## Post List page
 -Desktop View
-<img width="710" alt="image" src="https://github.com/Rahulzhp/photos/assets/107567053/3e258d53-11af-4046-93c8-f06b3656abe9" />
+<img width="710" alt="image" src="https://github.com/Rahulzhp/photos/assets/107567053/2fe58aa5-5a52-4712-8dea-f90fcc31a3da" />
 
 
 
