@@ -39,8 +39,8 @@ To make this clone we have used HTMl, CSS and JavaScript, ReactJS for front-end 
 
 
 
-## Login page
-
+## Create post page
 -Desktop View
-<img width="710" alt="image" src="https://github.com/Rahulzhp/photos/assets/107567053/0bff4904-91aa-48bd-ab1e-5813a309fdce" />
+<img width="710" alt="image" src="https://github.com/Rahulzhp/photos/assets/107567053/9e38413a-eddf-4124-93de-92ca01a596d4" />
+
 
