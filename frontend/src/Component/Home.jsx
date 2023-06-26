@@ -46,7 +46,7 @@ const Home = () => {
     }, []);
 
     const fetchData = (() => {
-        axios.get(`http://localhost:8080/project/`)
+        axios.get(`https://handsome-pink-squid.cyclic.app/project/`)
             .then((res) => {
                 console.log(res.data.post)
                 setData(res.data.post)
@@ -58,7 +58,7 @@ const Home = () => {
 
     const handleedit = () => {
         // console.log("id", currentPostId)
-        axios.patch(`http://localhost:8080/project/${currentPostId}`, formData)
+        axios.patch(`https://handsome-pink-squid.cyclic.app/project/${currentPostId}`, formData)
             .then((res) => {
                 if (res.data == "edited") {
                     toast({
@@ -78,25 +78,25 @@ const Home = () => {
 
         setTimeout(() => {
             fetchData()
-        }, 300)
+        }, 10)
 
     }
     const handleDelete = (id) => {
         // console.log(id)
-        axios.delete(`http://localhost:8080/project/${id}`)
+        axios.delete(`https://handsome-pink-squid.cyclic.app/project/${id}`)
             .then((res) => {
                 if (res.data == "deleted") {
                     toast({
                         title: 'Deleted Successfully.',
                         description: "You have Deleted your Content",
                         status: 'success',
-                        duration: 9000,
+                        duration: 7000,
                         isClosable: true,
                     })
                 }
                 setTimeout(() => {
                     fetchData()
-                }, 300)
+                }, 10)
 
             })
             .catch((er) => {

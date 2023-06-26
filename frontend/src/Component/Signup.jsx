@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/Signup.css'; // import CSS file for styling
-import logo from '../Icons/Logo.svg';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
@@ -41,7 +41,7 @@ const Signup = () => {
         } else {
             setPasswordError(false);
             setdisable(true)
-            axios.post("http://localhost:8080/users/register", payload)
+            axios.post("https://handsome-pink-squid.cyclic.app/users/register", payload)
                 .then((res) => {
                     if (res.data === "success") {
                         setsignsucess(true)

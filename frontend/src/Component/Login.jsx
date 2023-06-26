@@ -32,14 +32,14 @@ const Login = () => {
         } else {
             setPasswordError(false);
             setdisable(true)
-            axios.post("http://localhost:8080/users/login", payload)
+            axios.post("https://handsome-pink-squid.cyclic.app/users/login", payload)
                 .then((res) => {
                     if (res.data === "sucess") {
                         toast({
                             title: 'Login Successfully.',
                             description: "You Can Explore Now",
                             status: 'success',
-                            duration: 9000,
+                            duration: 7000,
                             isClosable: true,
                         })
                         setTimeout(() => {
@@ -54,7 +54,7 @@ const Login = () => {
                             title: 'Invalid Credential',
                             description: "Not allow to home page",
                             status: 'error',
-                            duration: 9000,
+                            duration: 7000,
                             isClosable: true,
                         })
                         setInvalid(true)

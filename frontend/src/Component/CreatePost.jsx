@@ -22,7 +22,7 @@ const CreatePost = () => {
 
     const handleSubmit = async e => {
         e.preventDefault();
-        axios.post('http://localhost:8080/project/add', formData)
+        axios.post('https://handsome-pink-squid.cyclic.app/project/add', formData)
             .then((res) => {
                 console.log(res)
                 setFormData({
